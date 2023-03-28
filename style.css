@@ -1,10 +1,10 @@
 body {
-    background-color: #007AFF !important;
+    background-color: rgb(50, 50, 50) !important;
 }
 
 .container {
     min-height: 100vh;
-    background-color: #007AFF !important;
+    background-color: rgb(50, 50, 50) !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,6 +27,7 @@ body {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
-.bg-success, .bg-danger {
+.bg-success,
+.bg-danger {
     color: white !important;
 }
