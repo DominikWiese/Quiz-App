@@ -31,10 +31,21 @@
 
     <div class="container">
         <div class="card quiz-card">
-            <img src="./img/bg.jpg" class="card-img-top" alt="...">
-            
-            <div class="card-body" id="endScreen" style="display: none;">
-                Quiz beendet!
+            <img src="./img/bg.jpg" id="headerImg" class="card-img-top" alt="...">
+
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" id="progressBar" style="width: 0">25%</div>
+            </div>
+
+            <div class="card-body text-center" id="endScreen" style="display: none;">
+                <b class="font-size">Quiz beendet!</b>
+
+
+                <div class="text-center margin-top">
+
+                    Du hast <b id="endResult">XXX</b> Fragen von <b id="endAllQuestion">XXX</b> richtig beantwortet!!!
+                </div>
             </div>
 
             <div class="card-body" id="questionBody">
@@ -68,7 +79,8 @@
                         <b id="current-question">1</b> von <b id="all-questions">5</b> Fragen
                     </span>
 
-                    <button onclick="nextQuestion()" class="btn btn-primary" id="next-button" disabled>Nächste Frage</button>
+                    <button onclick="nextQuestion()" class="btn btn-primary" id="next-button" disabled>Nächste
+                        Frage</button>
                 </div>
             </div>
         </div>
